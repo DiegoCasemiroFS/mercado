@@ -1,0 +1,13 @@
+CREATE TABLE funcionario (
+    id SERIAL PRIMARY KEY,
+    nome VARCHAR(255) NOT NULL,
+    cpf VARCHAR(14) NOT NULL,
+    telefone VARCHAR(20) NOT NULL,
+    rua VARCHAR(255) NOT NULL,
+    numero VARCHAR(10) NOT NULL,
+    bairro VARCHAR(255) NOT NULL,
+    cidade VARCHAR(255) NOT NULL,
+    estado VARCHAR(2) NOT NULL,
+    cep VARCHAR(10) NOT NULL,
+    funcao VARCHAR(20) NOT NULL
+);
