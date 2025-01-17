@@ -34,6 +34,7 @@ public class FuncionarioController {
         return funcionarioService.autualizaCadastro(id, funcionarioRequestDto);
     }
 
+    @DeleteMapping("/deleta/{id}")
     public void deletaFuncionario(@RequestBody Long id) {
         funcionarioService.deletaFuncionario(id);
     }
