@@ -4,8 +4,10 @@ import com.DiegoCasemiroFS.mercado.entity.enums.Funcao;
 import jakarta.persistence.*;
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import lombok.Setter;
 
 @Entity
+@Setter
 @Table(name="funcionario")
 @AllArgsConstructor
 @NoArgsConstructor
@@ -21,8 +23,10 @@ public class Funcionario {
 
     private String telefone;
 
+    @Embedded
     private Endereco endereco;
 
+    @Enumerated(EnumType.STRING)
     private Funcao funcao;
 }
 
